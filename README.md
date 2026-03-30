@@ -1,30 +1,36 @@
 # 🎓 Student Management System
 
-Un sistema sencillo basado en **Python** para gestionar registros de estudiantes a través de una interfaz de consola (CLI). Permite realizar operaciones básicas de un CRUD (Crear, Leer, Actualizar y Eliminar).
+A simple Python-based Command Line Interface (CLI) tool to manage student records. This project demonstrates basic CRUD (Create, Read, Update, Delete) operations using lists and dictionaries.
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-El sistema ofrece las siguientes opciones:
-1. **Registrar estudiante:** Captura ID, nombre, edad, curso y estado.
-2. **Consultar lista:** Muestra todos los estudiantes registrados actualmente.
-3. **Buscar por ID:** Localiza la información de un estudiante específico.
-4. **Actualizar datos:** Modifica campos existentes permitiendo mantener los actuales si se deja en blanco.
-5. **Eliminar registro:** Borra a un estudiante del sistema mediante su ID.
+The system allows you to:
+1. **Register Students:** Capture ID, name, age, course, and enrollment status.
+2. **Consult Student List:** View all currently registered students in a formatted list.
+3. **Search by ID:** Quickly find a specific student using their unique ID.
+4. **Update Information:** Modify existing student data (keeping current values if fields are left blank).
+5. **Delete Records:** Remove a student from the system via their ID.
 
-## 🛠️ Requisitos
+## 🛠️ Requirements
 
-*   **Python 3.x** instalado.
+*   **Python 3.x** or higher installed on your machine.
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
-*   `main.py`: Contiene el ciclo principal del menú y la lógica de interacción con el usuario.
-*   `functions.py`: Contiene toda la lógica de negocio, funciones de manipulación de la lista y manejo de errores.
+*   `main.py`: Contains the main application loop and the interactive menu.
+*   `functions.py`: Contains the core logic and functions for data manipulation.
 
-## 💻 Instalación y Uso
+## 💻 How to Run
 
-1. **Clona o descarga** los archivos en una misma carpeta.
-2. Asegúrate de que los archivos se llamen exactamente `main.py` y `functions.py`.
-3. Abre una terminal en dicha carpeta.
-4. Ejecuta el programa con el siguiente comando:
-   ```bash
-   python main.py
+1.  **Download** both `main.py` and `functions.py` into the same folder.
+2.  Open your **terminal** or command prompt.
+3.  Navigate to the project folder.
+4.  Run the application using:
+    ```bash
+    python main.py
+    ```
+
+## ⚠️ Important Notes
+
+*   **Data Persistence:** This version uses an **in-memory list**. This means all data will be cleared once the program is closed.
+*   **Error Handling:** The registration process includes basic `try-except` blocks to prevent crashes from invalid data types (e.g., entering letters in the ID field).
